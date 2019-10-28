@@ -1,7 +1,5 @@
 #include<iostream>
 
-
-
 int binary_search(int arr[], int trget, int left, int right) {
 
     int mid = (right - left) / 2;
