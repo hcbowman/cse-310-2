@@ -1,0 +1,31 @@
+{
+    "version": "2.0.0",
+    "windows": {
+      "options": {
+        "shell": {
+          "executable": "bash.exe",
+          "args": ["-c"]
+        }
+      }
+    },
+    "tasks": [
+        {
+            "type": "shell",
+            "label": "g++ build active file",
+            "command": "/usr/bin/g++",
+            "args": [
+                "--std=c++11",
+                "-pedantic",
+                "-Wall",
+                "-g",
+                "/mnt/c/Users/hbowm/Documents/cse310-workspace/cse310-syrotiuk/binary-search/main.cpp",
+                "-o",
+                "/mnt/c/Users/hbowm/Documents/cse310-workspace/cse310-syrotiuk/binary-search/a.exe"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        }
+    ]
+}
